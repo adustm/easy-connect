@@ -34,8 +34,7 @@ RTWInterface wifi;
 SpwfSAInterface wifi(MBED_CONF_APP_WIFI_TX, MBED_CONF_APP_WIFI_RX);
 #elif MBED_CONF_APP_NETWORK_INTERFACE == WIFI_ISM43362
 #include "ISM43362Interface.h"
-//ISM43362Interface wifi(PC_12, PC_11, PC_10, PE_0, PE_8, PE_1, PB_12, false);
-ISM43362Interface wifi(PC_12, PC_11, PC_10, PE_0, PE_8, PE_1, PB_12, true);
+ISM43362Interface wifi(PC_12, PC_11, PC_10, PE_0, PE_8, PE_1, PB_12, false);
 #elif MBED_CONF_APP_NETWORK_INTERFACE == ETHERNET
 #include "EthernetInterface.h"
 EthernetInterface eth;
